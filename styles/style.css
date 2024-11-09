@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./habit.css);
+@import url(./runner.css);
+@import url(./training.css);
+@import url(./bmi.css);
+@import url(./team.css);
+@import url(./footer.css);
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --size-logo: 2.25rem;
+  --size-xxs: 0.7rem;
+  --size-xs: 0.82rem;
+  --size-sm: 1rem;
+  --size-base: 1.125rem;
+  --size-md: 1.25rem;
+  --size-lg: 1.4375rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.75rem;
+  --size-4xl: 1.875rem;
+  --size-5xl: 2rem;
+  --size-6xl: 2.25rem;
+  --size-7xl: 3rem;
+  --size-8xl: 4.875rem;
+
+  /* colors */
+  --dark-color: rgb(25, 22, 22);
+  --black-color: rgb(0, 0, 0);
+  --white-color: rgb(255, 255, 255);
+  --orange-color: rgb(230, 83, 60);
+  --ash-color: rgb(146, 138, 151);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+  background-repeat: no-repeat;
+  user-select: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-size: var(--size-xm);
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.btn {
+  font-family: inherit;
+  text-align: center;
+  padding: 0.7rem 1.6rem;
+  border-radius: 2.625rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px var(--orange-color);
+  transition: box-shadow 200ms linear;
+}
+
+.nav__hover {
+  border-radius: 1rem;
+  padding: 0.5rem 1.2rem;
+  letter-spacing: 0.05rem;
+}
+
+.nav__hover:hover {
+  background-color: var(--orange-color);
+}
+
+.page__title {
+  font-size: var(--size-3xl);
+  color: var(--white-color);
+  font-weight: 800;
+}
+
+.secondary__title {
+  color: var(--white-color);
+  font-weight: 800;
+  font-size: var(--size-base);
+}
+
+.page__details {
+  color: var(--ash-color);
+  font-size: var(--size-xm);
+  line-height: 24px;
+  font-weight: 300;
+}
+
+/* media queries */
+
+/* for small screen */
+
+@media (min-width: 500px) {
+  section {
+    padding: 0 0.7rem;
+  }
+  .container {
+    max-width: 500px;
+  }
+
+  .page__title {
+    font-size: var(--size-7xl);
+  }
+
+  .page__details {
+    font-size: var(--size-sm);
+  }
+}
+
+/* for medium screen */
+
+@media (min-width: 768px) {
+  section {
+    padding: 0 1rem;
+  }
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* for large screen */
+
+@media (min-width: 1280px) {
+  section {
+    padding: 0 2rem;
+  }
+  .container {
+    max-width: 1280px;
+  }
+
+  .secondary__title {
+    color: var(--white-color);
+    font-weight: 800;
+    font-size: var(--size-lg);
+  }
+}

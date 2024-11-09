@@ -1,0 +1,134 @@
+.bmi {
+  background-color: var(--black-color);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.bmi__description {
+  display: grid;
+  place-content: center;
+}
+
+.bmi__details {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bmi__text {
+  margin-top: 1rem;
+}
+
+/* // calculator part // */
+
+.calculator {
+  background-color: #222222;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.bmi__chart-table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 86%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bmi__chart-table th {
+  color: var(--white-color);
+  border: 2px solid grey;
+  padding: 0.7rem;
+}
+
+.bmi__chart-table td {
+  color: var(--ash-color);
+  border: 2px solid grey;
+  padding: 0.7rem;
+}
+
+.calculator__text {
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.calculation__form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calculation__form div {
+  display: flex;
+}
+
+select,
+input {
+  padding: 0.6rem 1rem;
+  font-size: var(--size-sm);
+  background-color: rgba(96, 96, 96, 0.3);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin: 0.3rem;
+  width: 100%;
+}
+
+option {
+  background-color: rgba(255, 17, 17, 0.3);
+}
+
+.calculation__btn {
+  background-color: var(--orange-color);
+  margin-top: 1rem;
+  margin-left: 0.6rem;
+}
+
+/* for small screen */
+
+@media (min-width: 500px) {
+  section {
+    padding: 0 0.7rem;
+  }
+  .container {
+    max-width: 500px;
+  }
+}
+
+/* for medium screen */
+
+@media (min-width: 768px) {
+  section {
+    padding: 0 1rem;
+  }
+  .container {
+    max-width: 768px;
+  }
+
+  .bmi__chart {
+    width: 50%;
+  }
+
+  .calculator__chart {
+    width: 50%;
+  }
+
+  .calculator__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* for large screen */
+
+@media (min-width: 1280px) {
+  section {
+    padding: 0 2rem;
+  }
+  .container {
+    max-width: 1280px;
+  }
+}
